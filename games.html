@@ -7,36 +7,58 @@
 	<script type="text/javascript" src="games.js"></script>
 </head>
 <body>
-<header class="text-gray-600 body-font bg-gray-200">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <span class="ml-3 text-xl">BoxArcade</span>
-    </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900" href="index.html"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" >Home 🏠</button></a>
+<nav class="bg-gray-800">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
 
-      <a class="mr-5 hover:text-gray-900" href="games.html"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Games 🎮</button></a>
-      <a class="mr-5 hover:text-gray-900"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Latest 🔥</button></a>
-      <a class="mr-5 hover:text-gray-900"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Dev Hub</button></a>
-    </nav>
-    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Beta
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button>
+      </div>
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font " style="color: #fff;">BoxArcade</h1>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4 ">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="index.html" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700" aria-current="page">Home</a>
+
+            <a href="games.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Games</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Latest News</a>
+
+            <a href="dev.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dev Hub</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Games</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Latest News</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dev Hub</a>
+    </div>
+  </div>
+</nav>
 <section class="text-gray-600 body-font bg-gray-200 " items-center>
 
 		<div id="osmonitor" style="background: #000;font: monospace;color: #fff;align-items: center;height: max-content;" class="items-center">
+      
 				<h2 align="center" id="h2">The Selected Game to play will appear here</h2>
-				<center><iframe width='320' id="minion-rush" height='480' frameborder='0' scrolling='no' src='https://g.shtoss.com/minion-rush/' style="display: none;"></iframe></center>
+				<center><iframe width='320' id="minion-rush" height='480' frameborder='0' scrolling='no' src='https://g.shtoss.com/minion-rush/' style="display: none;" ></iframe></center>
 				<center><iframe width='800' id="santa-goes-home" height='480' frameborder='0' scrolling='no' src='https://g.shtoss.com/santa-goes-home/' style='display: none;'></iframe></center>
 				<center><iframe width='480' height='854' frameborder='0' scrolling='no' src='https://g.shtoss.com/spring-panda/' id="spring-panda" style="display: none;"></iframe></center>
 				<center><iframe width='854' height='480' frameborder='0' scrolling='no' src='https://g.shtoss.com/hill-climb-racing/' style="display:none;" id="hill-climb-racing"></iframe></center>
 				<center><iframe width='854' height='480' frameborder='0' scrolling='no' src='https://g.shtoss.com/jump-on-jupiter/' style="display:none;" id="jump-on-jupiter"></iframe></center>
 				<center><iframe width='275' height='489' frameborder='0' scrolling='no' src='https://g.shtoss.com/brave-triangle/' id="brave-triangle" style="display: none;"></iframe></center>
 				<center><iframe width='768' height='1024' frameborder='0' scrolling='no' src='https://g.shtoss.com/car-speed-booster/' id="car-speed-booster" style="display: none;"></iframe></center>
+       
 		</div>
   <div class="container px-5 py-24 mx-auto items-center">
     <div class="flex flex-wrap -m-4 border-2">
@@ -48,7 +70,7 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Free</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Minion Rush</h2>
           <p class="mt-1">Free</p>
-           <a><button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="minionrush()">Play 🔥</button></a>
+           <a><button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="minionrush()">Play </button></a>
         </div>
       </div>
 	<div class="m-px">
@@ -59,7 +81,7 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Paid</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Santa Goes Home</h2>
           <p class="mt-1">AD : 1</p>
-          <a><button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="santagoeshome()">Play 🔥</button></a>
+          <a><button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="santagoeshome()">Play </button></a>
         </div>
       </div>
       	<div class="m-px">
@@ -70,7 +92,7 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Paid</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Hill Climb Racing</h2>
           <p class="mt-1">AD : 1</p>
-          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="hillclimbracing()">Play 🔥</button>
+          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="hillclimbracing()">Play </button>
         </div>
       </div>
        <div class="m-px">
@@ -81,7 +103,7 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Free</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Spring Panda</h2>
           <p class="mt-1">Free</p>
-          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="springpanda()">Play 🔥</button>
+          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="springpanda()">Play </button>
         </div>
      </div>
      	<div class="m-px">
@@ -92,7 +114,7 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Paid</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Jump On Jupiter</h2>
           <p class="mt-1">AD : 1</p>
-          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="jumponjupiter()">Play 🔥</button>
+          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="jumponjupiter()">Play </button>
         </div>
       </div>
       <div class="m-px">
@@ -103,7 +125,7 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Paid</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Brave Triangle</h2>
           <p class="mt-1">AD : 1</p>
-          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="bravetriangle()">Play 🔥</button>
+          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="bravetriangle()">Play </button>
         </div>
       </div>
         <div class="m-px">
@@ -114,17 +136,24 @@
           <h3 class="text-gray-500 text-xs tracking-widest title-font mb-1">CATEGORY : Paid</h3>
           <h2 class="text-gray-900 title-font text-lg font-medium">Car Speed Booster</h2>
           <p class="mt-1">AD : 1</p>
-          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="carspeedbooster()">Play 🔥</button>
+          <button class="ml-4 inline-flex bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg bg-blue-500 text-white" onclick="carspeedbooster()">Play </button>
         </div>
       </div>
     </div>
+</section>
+<section class="text-gray-600 body-font bg-gray-200">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-red-500">Games feels bad fps when your internet connection is slow. And try to use this website in pc's or laptops. Mobile devices may also face the issue of fps drop.</h1>
+    </div>
+  </div>
 </section>
 <footer class="text-gray-600 body-font">
   <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
       <span class="ml-3 text-xl">BoxArcade</span>
     </a>
     <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 BoxArcade —
-      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">BoxArcade Version : alpha0.1</a>
+      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">BoxArcade Version : α0.1</a>
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a class="text-gray-500">

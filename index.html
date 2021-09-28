@@ -16,32 +16,55 @@
  -->
 
 
-<header class="text-gray-600 body-font bg-gray-200">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-      <span class="ml-3 text-xl">BoxArcade</span>
-    </a>
-    <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-      <a class="mr-5 hover:text-gray-900" href="index.html"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Home 🏠</button></a>
-      <a class="mr-5 hover:text-gray-900" href="games.html"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Games 🎮</button></a>
-      <a class="mr-5 hover:text-gray-900"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Latest 🔥</button></a>
-      <a class="mr-5 hover:text-gray-900"><button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Dev Hub</button></a>
-    </nav>
-    <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Beta
-      <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-        <path d="M5 12h14M12 5l7 7-7 7"></path>
-      </svg>
-    </button>
+<!-- This example requires Tailwind CSS v2.0+ -->
+<nav class="bg-gray-800">
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <!-- Mobile menu button-->
+
+      </div>
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font " style="color: #fff;">BoxArcade</h1>
+        <div class="hidden sm:block sm:ml-6">
+          <div class="flex space-x-4 ">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <a href="index.html" class="text-white px-3 py-2 rounded-md text-sm font-medium hover:text-white hover:bg-gray-700" aria-current="page">Home</a>
+
+            <a href="games.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Games</a>
+
+            <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Latest News</a>
+
+            <a href="dev.html" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Dev Hub</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-</header>
+
+  <!-- Mobile menu, show/hide based on menu state. -->
+  <div class="sm:hidden" id="mobile-menu">
+    <div class="px-2 pt-2 pb-3 space-y-1">
+      <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+      <a href="#" class="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium" aria-current="page">Home</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Games</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Latest News</a>
+
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Dev Hub</a>
+    </div>
+  </div>
+</nav>
+
 <section class="text-gray-600 body-font bg-gray-200">
   <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
     <div class="text-center lg:w-2/3 w-full">
       <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About "BoxArcade"</h1>
       <p class="mb-8 leading-relaxed">This is a site were you can play a lot of famous and fun games without dowloading it. We will fire up server at any time you try to play. We just started the sites and have a lot of collections to add but for now you have some good games to play. Wait.. More games are comng soon !</p>
       <div class="flex justify-center">
-        <a href="games.html"><button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">To Games 🎮</button></a>
-        <a><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Latest News 🔥</button></a>
+        <a href="games.html"><button class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">To Games </button></a>
+        <a><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Latest News </button></a>
       </div>
     </div>
   </div>
@@ -77,7 +100,7 @@
 <section class="text-gray-600 body-font bg-gray-200">
   <div class="container px-5 py-24 mx-auto">
     <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-red-500">Note that this website is at the alpha stage and more issues can be found in this website but with more updates I will optimize and fix all the bugs. And some pages may be missing from the site whole of it will be added in coming updates.</h1>
+      <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-red-500">Note that this website is at the alpha stage and more issues can be found in this website but with more updates I will optimize and fix all the bugs. And some pages may be missing from the site whole of it will be added in coming updates. Some t</h1>
     </div>
   </div>
 </section>
@@ -86,7 +109,7 @@
       <span class="ml-3 text-xl">BoxArcade</span>
     </a>
     <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2021 BoxArcade —
-      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">BoxArcade Version : alpha0.1</a>
+      <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">BoxArcade Version : α0.2</a>
     </p>
     <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
       <a class="text-gray-500">
